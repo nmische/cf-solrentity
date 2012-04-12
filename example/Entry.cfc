@@ -1,6 +1,6 @@
 component persistent="true" table="entry" extends="SolrEntity" solrcollection="blog" {
 
-	property name="entryid" filedtype="id" generator="native" solrfield="key";
+	property name="entryid" fieldtype="id" generator="native" solrfield="key";
 	property name="author" fieldtype="many-to-one" fkcolumn="authorid" cfc="Author";
 	property name="title" solrfield="title";
 	property name="content" solrfield="body";
